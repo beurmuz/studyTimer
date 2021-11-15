@@ -1,0 +1,52 @@
+// variables
+$font-p: 20px;
+$padding-s: 20px;
+
+@mixin button_view {
+    margin: 5px;
+    border: none;
+    font-size: $font-p;
+    cursor: pointer;
+}
+
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+
+    .pageSection {
+        padding: $padding-s;
+    }
+}
+
+/* mainSection */
+.displayTime {
+    font-size: 50px;
+    padding: $padding-s;
+}
+
+.controlBox {
+    padding: 10px;
+
+    button {
+        width: 120px;
+        height: 50px;
+        background-color: lightpink;
+        @include button_view();
+    }
+}
+
+.mainBox {
+    padding: $padding-s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        margin: 5px;
+        width: 100px;
+        height: 70px;
+        @include button_view();
+    }
+}

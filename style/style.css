@@ -1,56 +1,57 @@
 body {
-    margin: 0px;
-    text-align: center;
-    /* background-color: lightgrey; */
-    font-family: 'Nanum Gothic', sans-serif;
+  margin: 0px;
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
-/* pageSection */
-.pageSection {
-    padding: 10px;
+body .pageSection {
+  padding: 20px;
 }
-
 
 /* mainSection */
 .displayTime {
-    font-size: 50px;
-    padding: 20px;
+  font-size: 50px;
+  padding: 20px;
 }
 
 .controlBox {
-    padding: 10px;
+  padding: 10px;
 }
 
-.controlBtn {
-    margin: 5px;
-    width: 120px;
-    height: 50px;
-    border: none;
-    background-color: lightpink;
-    font-size: 20px;
-    cursor: pointer;
+.controlBox button {
+  width: 120px;
+  height: 50px;
+  background-color: lightpink;
+  margin: 5px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .mainBox {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.timerBtn {
-    margin: 5px;
-    width: 100px;
-    height: 70px;
-    cursor: pointer;
-    font-size: 20px;
-    background-color: darkgray;
-    border: none;
+.mainBox button {
+  margin: 5px;
+  width: 100px;
+  height: 70px;
+  margin: 5px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
-
-@media screen and (max-width: 600px) {
-    .mainBox {
-        flex-direction: column;
-    }
-}
+/*# sourceMappingURL=style.css.map */
